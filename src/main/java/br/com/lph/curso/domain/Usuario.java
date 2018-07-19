@@ -4,18 +4,18 @@ public class Usuario {
 	
 	private Long id;
 	private String nome;
-	private String sobreNome;
+	private String sobrenome;
 	
 	
 	public Usuario() {
 		super();
 	}
 	
-	public Usuario(Long id, String nome, String sobreNome) {
+	public Usuario(Long id, String nome, String sobrenome) {
 		super();
 		this.id = id;
 		this.nome = nome;
-		this.sobreNome = sobreNome;
+		this.sobrenome = sobrenome;
 	}
 
 	public Long getId() {
@@ -30,16 +30,16 @@ public class Usuario {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getSobreNome() {
-		return sobreNome;
+	public String getSobrenome() {
+		return sobrenome;
 	}
-	public void setSobreNome(String sobreNome) {
-		this.sobreNome = sobreNome;
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
 	}
 
 	@Override
 	public String toString() {
-		return "Usuario [id=" + id + ", nome=" + nome + ", sobreNome=" + sobreNome + "]";
+		return "Usuario [id=" + id + ", nome=" + nome + ", sobreNome=" + sobrenome + "]";
 	}
 	
 }
