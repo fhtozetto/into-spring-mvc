@@ -10,7 +10,8 @@ public class WelcomeController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET) // Esta anotação tem como função mapear o path de acesso, via URL, ao método. Outro objetivo é definir o verbo HTTP (POST, GET, ...) referente à solicitação
 	public String welcome() {
-		return "welcome"; // nome da página sem a extenção
+		//return "welcome"; // nome da página sem a extenção
+		return "redirect:/usuario/todos"; // redireciona para a pagina usuario com todos os cadastros
 	}
 
 	@RequestMapping(value = "/teste", method = RequestMethod.GET) // Esta anotação tem como função mapear o path de acesso, via URL, ao método. Outro objetivo é definir o verbo HTTP (POST, GET, ...) referente à solicitação

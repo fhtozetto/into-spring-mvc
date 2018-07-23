@@ -6,7 +6,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Lista de Usuários</title>
+    <title>Lista de Usuarios</title>
     <spring:url var="css" value="/static/css/bootstrap.css"/>
     <link type="text/css" rel="stylesheet" href="${css }"/>
 </head>
@@ -32,9 +32,7 @@
             <tr>
                 <th>ID</th>
                 <th>NOME</th>
-                <th>DATA NASCIMENTO</th>
-                <th>TIPO SEXO</th>
-                <th>AÇÃO</th>
+                <th>AÇÃO</th> 
             </tr>
             </thead>
             <tbody>
@@ -42,12 +40,7 @@
                 <tr>
                     <td>${usuario.id }</td>
                     <td>${usuario.nome }&nbsp;${usuario.sobrenome }</td>
-                    <td>
-                    	<f:parseDate var="date" value="${usuario.dtNascimento }" pattern="yyyy-MM-dd" type="date"/>
-                    	<f:formatDate value="${date }" pattern="dd/MM/yyyy" type="date"/>
-                    </td>
-                    <td>${usuario.sexo.desc }</td>
-                    <td>                        
+                    <td>  
                     	<spring:url value="/usuario/update/${usuario.id }" var="update"/>
                         <a class="btn btn-info" href="${update }" >Editar</a>
                         <spring:url value="/usuario/delete/${usuario.id }" var="delete"/>
