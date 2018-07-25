@@ -1,1 +1,8 @@
+br\com\lph\curso\domain\Usuario.class
+br\com\lph\curso\config\SpringInitConfig.class
+br\com\lph\curso\dao\UsuarioDao.class
 br\com\lph\curso\web\controller\UsuarioController.class
+br\com\lph\curso\web\controller\WelcomeController.class
+br\com\lph\curso\config\RootConfig.class
+br\com\lph\curso\dao\UsuarioDaoImpl.class
+br\com\lph\curso\config\SpringMvcConfig.class

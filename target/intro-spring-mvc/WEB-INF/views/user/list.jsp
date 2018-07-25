@@ -6,8 +6,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Lista de Usuarios</title>
-    <spring:url var="css" value="/static/css/bootstrap.css"/>
+    <title>Lista de Usuários</title>
     <link type="text/css" rel="stylesheet" href="${css }"/>
 </head>
 <body>
