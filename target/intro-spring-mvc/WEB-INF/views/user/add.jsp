@@ -25,12 +25,14 @@
             <div class="form-group">
                 <label for="nome">Nome: </label>
                 <form:input path="nome" class="form-control"/>   
-           
             </div>
             <div class="form-group">
                 <label for="sobrenome">Sobrenome: </label>
                 <form:input path="sobrenome"  class="form-control"/>    
-       
+            </div>
+            <div class="form-group">
+                <label for="dtNascimento">Data Nascimento: </label>
+                <form:input path="dtNascimento"  class="form-control" type="date"/>    
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Confirmar</button>
