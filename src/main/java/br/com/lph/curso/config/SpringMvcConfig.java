@@ -2,12 +2,16 @@ package br.com.lph.curso.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.format.FormatterRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
+import br.com.lph.curso.web.conversor.TipoSexoConverter;
+
 @Configuration // Marca essa classe como sendo de configuração do Spring
-public class SpringMvcConfig {
-	
+public class SpringMvcConfig extends WebMvcConfigurerAdapter {
+
 	@Bean //Define o método como um bean gerenciado pelo Spring Framework;
 	public InternalResourceViewResolver viewResolver() { 
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver(); //A instância da classe InternalResourceViewResolver é necessária para a configuração do view template do Spring MVC baseado em JSTL
@@ -16,4 +20,10 @@ public class SpringMvcConfig {
 		resolver.setViewClass(JstlView.class); // A classe JstlView informa ao Spring MVC que o view template será baseado no framework JSTL
 		return resolver;
 	}
+	
+	
+	@Override
+	public void addFormatters(FormatterRegistry registry) {
+		registry.addConverter(new TipoSexoConverter());
+	}	
 }
