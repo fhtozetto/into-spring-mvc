@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [29/Jul/2018:12:31:44 -0300] "GET /intro-spring-mvc HTTP/1.1" 302 - http-bio-9090-exec-1 0
+0:0:0:0:0:0:0:1 - - [29/Jul/2018:12:31:44 -0300] "GET /intro-spring-mvc/ HTTP/1.1" 302 - http-bio-9090-exec-2 66
+0:0:0:0:0:0:0:1 - - [29/Jul/2018:12:31:44 -0300] "GET /intro-spring-mvc/usuario/todos HTTP/1.1" 200 5555 http-bio-9090-exec-3 231
+0:0:0:0:0:0:0:1 - - [29/Jul/2018:12:31:45 -0300] "GET /favicon.ico HTTP/1.1" 404 - http-bio-9090-exec-4 0
+0:0:0:0:0:0:0:1 - - [29/Jul/2018:12:31:48 -0300] "GET /intro-spring-mvc/usuario/cadastro;jsessionid=BB62D65ACB6E1E1C4C7ACE77CD21112B HTTP/1.1" 200 1886 http-bio-9090-exec-5 201
+0:0:0:0:0:0:0:1 - - [29/Jul/2018:12:31:49 -0300] "POST /intro-spring-mvc/usuario/save HTTP/1.1" 200 2257 http-bio-9090-exec-6 220
